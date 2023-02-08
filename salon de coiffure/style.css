@@ -1,0 +1,60 @@
+*{
+    padding:0;
+    margin: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+
+}
+nav ul li a{
+ position: relative;
+ text-decoration: none;
+ font-size: 30px;
+ color:black ;
+ transition: 0,3s;
+ 
+}
+nav ul li a::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background-color: #00FF00 ;
+    bottom: -7px;
+    transition: 0,3s;
+
+}
+nav ul li a:hover{
+    color: black;
+}
+nav ul li a:hover::before{
+    width: 100%;
+}
+body{
+    background-image:url(image/coif.jpg);
+    background-repeat: none;
+    background-size: cover;
+} 
+
+button{
+    background-color: white;
+    color:#00FF00;
+    border-radius:5px  ;
+    font-size:x-large;
+}
+#description{
+   position:relative;
+   margin-left: 50px;
+   margin-right:50px;
+ color:#00FF00;
+ background-color:grey;
+ text-align: center;
+ text-transform:capitalize;
+}
